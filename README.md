@@ -9,10 +9,9 @@
 
 <img src="images/logo/logo.png" alt="PosterCraft Logo" width="200"/>
 
-## *From your prompts to high-quality aesthetic posters*
+## *<span style="background: linear-gradient(to right, #8A5BF1, #E863D8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">From your prompts to high-quality aesthetic posters</span>*
 
-### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**📖 Documentation**](https://docs.postercraft.ai)
-
+### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) 
 </div>
 
 ---
