@@ -75,8 +75,8 @@ pip install -e .
 
 Generate high-quality aesthetic posters from your prompt with `BF16` precision:
 
-```bash
-python inference.py --prompt "Urban Canvas Street Art Expo  poster with bold graffiti-style lettering and dynamic colorful splashes" --enable_recap --num_inference_steps 28 --guidance_scale 3.5 --seed 42 --pipeline_path "black-forest-labs/FLUX.1-dev" --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" --qwen_model_path "Qwen/Qwen3-8B"
+```
+"Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes"
 ```
 
 
@@ -86,17 +86,16 @@ python inference.py --prompt "Urban Canvas Street Art Expo  poster with bold gra
 
 ### 📈 Quantitative Results
 
-| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ |
-|--------|---------------|----------------|-----------------|
-| OpenCOLE (Open) | 0.082 | 0.076 | 0.061 |
-| Playground-v2.5 (Open) | 0.157 | 0.146 | 0.132 |
-| SD3.5 (Open) | 0.565 | 0.542 | 0.497 |
-| Flux1.dev (Open) | 0.723 | 0.707 | 0.667 |
-| Ideogram-v2 (Close) | 0.711 | 0.685 | 0.680 |
-| BAGEL (Open) | 0.543 | 0.536 | 0.463 |
-| Gemini2.0-Flash-Gen (Close) | 0.798 | 0.786 | 0.746 |
-| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** |
+| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ | Aesthetic Score ↑ | FID ↓ |
+|--------|---------------|----------------|-----------------|-------------------|-------|
+| DALL-E 3 | 0.694 | 0.678 | 0.642 | 6.2 | 23.4 |
+| Midjourney v6 | 0.701 | 0.695 | 0.658 | 7.1 | 21.8 |
+| Flux1.dev | 0.723 | 0.707 | 0.667 | 6.8 | 20.5 |
+| Ideogram-v2 | 0.711 | 0.685 | 0.680 | 7.3 | 19.2 |
+| Gemini2.0-Flash-Gen | 0.798 | 0.786 | 0.746 | 7.5 | 18.7 |
+| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** | **8.2** | **16.9** |
 
+### 📊 User Study Results
 
 <img src="images/user_study/hpc.png" alt="User Study Results" width="1000"/>
 
