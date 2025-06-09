@@ -7,12 +7,11 @@
 [![Website](https://img.shields.io/badge/🌐-Website-green)](https://postercraft.ai)
 [![Demo](https://img.shields.io/badge/🎥-Live_Demo-purple)](https://ephemeral182.github.io/PosterCraft/)
 
-
 <img src="images/logo/logo.png" alt="PosterCraft Logo" width="200"/>
 
 ## *From your prompts to high-quality aesthetic posters*
 
-### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) 
+### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**📖 Documentation**](https://docs.postercraft.ai)
 
 </div>
 
@@ -37,7 +36,7 @@
 > <sup>4</sup>National University of Singapore  
 > <sup>5</sup>The Hong Kong University of Science and Technology  
 >
-> \* Equal Contribution, † Corresponding Author
+> \*Equal Contribution, †Corresponding Author
 
 ---
 
@@ -46,10 +45,8 @@
 <div align="center">
 <img src="images/demo/demo2.png" alt="What is PosterCraft - Quick Prompt Demo" width="1000"/>
 <br>
-<em>From your prompts to high-quality aesthetic posters</em>
-<br>
+<em>From your prompts to high-quality aesthetic posters - Experience the power of simple descriptions</em>
 </div>
-
 
 PosterCraft is a unified framework for **high-quality aesthetic poster generation** that excels in **precise text rendering**, **seamless integration of abstract art**, **striking layouts**, and **stylistic harmony**.
 
@@ -74,6 +71,14 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+### 🚀 Quick Generation
+
+Generate high-quality aesthetic posters from your prompt with `BF16` precision:
+
+```bash
+python inference.py --prompt "Urban Canvas Street Art Expo</span> poster with bold graffiti-style lettering and dynamic colorful splashes" --enable_recap --num_inference_steps 28 --guidance_scale 3.5 --seed 42 --pipeline_path "black-forest-labs/FLUX.1-dev" --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" --qwen_model_path "Qwen/Qwen3-8B"
+```
+
 
 ## 📊 Performance Benchmarks
 
@@ -81,14 +86,16 @@ pip install -e .
 
 ### 📈 Quantitative Results
 
-| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ | Aesthetic Score ↑ | FID ↓ |
-|--------|---------------|----------------|-----------------|-------------------|-------|
-| DALL-E 3 | 0.694 | 0.678 | 0.642 | 6.2 | 23.4 |
-| Midjourney v6 | 0.701 | 0.695 | 0.658 | 7.1 | 21.8 |
-| Flux1.dev | 0.723 | 0.707 | 0.667 | 6.8 | 20.5 |
-| Ideogram-v2 | 0.711 | 0.685 | 0.680 | 7.3 | 19.2 |
-| Gemini2.0-Flash-Gen | 0.798 | 0.786 | 0.746 | 7.5 | 18.7 |
-| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** | **8.2** | **16.9** |
+| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ |
+|--------|---------------|----------------|-----------------|
+| OpenCOLE (Open) | 0.082 | 0.076 | 0.061 |
+| Playground-v2.5 (Open) | 0.157 | 0.146 | 0.132 |
+| SD3.5 (Open) | 0.565 | 0.542 | 0.497 |
+| Flux1.dev (Open) | 0.723 | 0.707 | 0.667 |
+| Ideogram-v2 (Close) | 0.711 | 0.685 | 0.680 |
+| BAGEL (Open) | 0.543 | 0.536 | 0.463 |
+| Gemini2.0-Flash-Gen (Close) | 0.798 | 0.786 | 0.746 |
+| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** |
 
 ### 📊 User Study Results
 
@@ -122,6 +129,7 @@ pip install -e .
 </tr>
 </table>
 
+*Experience the power of PosterCraft across diverse themes and styles*
 
 </div>
 
@@ -130,7 +138,7 @@ pip install -e .
 ## 🏗️ Model Architecture
 
 <div align="center">
-<img src="images/overview/framework_fig.png" alt="PosterCraft Framework Overview" width="1000"/>
+<img src="images/overview/framework_fig.png" alt="PosterCraft Framework Overview" width="800"/>
 <br>
 <em>A unified framework for high-quality aesthetic poster generation</em>
 </div>
@@ -159,40 +167,39 @@ We provide **four specialized datasets** for training PosterCraft workflow:
 
 ### 🔤 Text-Render-2M
 <div align="center">
-<img src="images/dataset/dataset1.png" alt="Text-Render-2M Dataset" width="1000"/>
+<img src="images/dataset/dataset1.png" alt="Text-Render-2M Dataset" width="700"/>
 <br>
-<em>Text-Render-2M: Multi-instance text rendering with diverse selections</em>
+<em><strong>Text-Render-2M: Multi-instance text rendering with diverse selections</strong></em>
 </div>
 
 A comprehensive text rendering dataset containing **2 million high-quality examples**. Features multi-instance text rendering, diverse text selections (varying in size, count, placement, and rotation), and dynamic content generation through both template-based and random string approaches.
 
 ### 🎨 HQ-Poster-100K
 <div align="center">
-<img src="images/dataset/dataset2.png" alt="HQ-Poster-100K Dataset" width="1000"/>
+<img src="images/dataset/dataset2.png" alt="HQ-Poster-100K Dataset" width="700"/>
 <br>
-<em>HQ-Poster-100K: Curated high-quality aesthetic posters</em>
+<em><strong>HQ-Poster-100K: Curated high-quality aesthetic posters</strong></em>
 </div>
 
 **100,000** meticulously curated high-quality posters with advanced filtering techniques and multi-modal scoring. Features Gemini-powered mask generation with detailed captions for comprehensive poster understanding.
 
 ### 👍 Poster-Preference-100K
 <div align="center">
-<img src="images/dataset/dataset3.png" alt="Poster-Preference-100K Dataset" width="1000"/>
+<img src="images/dataset/dataset3.png" alt="Poster-Preference-100K Dataset" width="700"/>
 <br>
-<em>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</em>
+<em><strong>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</strong></em>
 </div>
 
 **100,000** preference learning poster pairs with comprehensive evaluation by Gemini and aesthetic evaluators. Designed for human-aligned poster generation training through reinforcement learning.
 
 ### 🔄 Poster-Reflect-120K
 <div align="center">
-<img src="images/dataset/dataset4.png" alt="Poster-Reflect-120K Dataset" width="1000"/>
+<img src="images/dataset/dataset4.png" alt="Poster-Reflect-120K Dataset" width="700"/>
 <br>
-<em>Poster-Reflect-120K: Vision-language feedback pairs for iterative refinement</em>
+<em><strong>Poster-Reflect-120K: Vision-language feedback pairs for iterative refinement</strong></em>
 </div>
 
 **120,000** vision-language feedback pairs with comprehensive evaluation by Gemini and aesthetic evaluators. This dataset captures the iterative refinement process, and then provides detailed feedback for further improvements.
-
 
 <div align="center">
 <table>
