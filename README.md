@@ -116,7 +116,7 @@ pip install -e .
 
 ### 📊 User Study Results
 
-<img src="images/results/user_study.png" alt="User Study Results" width="600"/>
+<img src="images/user_study/hpc.png" alt="User Study Results" width="600"/>
 
 </div>
 
