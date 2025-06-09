@@ -75,7 +75,15 @@ pip install -e .
 Generate high-quality aesthetic posters from your prompt with `BF16` precision:
 
 ```bash
-python inference.py --prompt "Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes." --enable_recap --num_inference_steps 28 --guidance_scale 3.5 --seed 42 --pipeline_path "black-forest-labs/FLUX.1-dev" --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" --qwen_model_path "Qwen/Qwen3-8B"
+python inference.py \
+  --prompt "Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes" \
+  --enable_recap \
+  --num_inference_steps 28 \
+  --guidance_scale 3.5 \
+  --seed 42 \
+  --pipeline_path "black-forest-labs/FLUX.1-dev" \
+  --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" \
+  --qwen_model_path "Qwen/Qwen3-8B"
 ```
 
 
@@ -125,7 +133,6 @@ python inference.py --prompt "Urban Canvas Street Art Expo poster with bold graf
 </tr>
 </table>
 
-*Experience the power of PosterCraft across diverse themes and styles*
 
 </div>
 
@@ -285,8 +292,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- 🏛️ Thanks to our affiliated institutions for their support
-- 🤝 Special thanks to the open-source community for inspiration
+- 🏛️ Thanks to our affiliated institutions for their support.
+- 🤝 Special thanks to the open-source community for inspiration.
 
 ---
 
@@ -297,10 +304,5 @@ For any questions or inquiries, please reach out to us:
 - **Sixiang Chen**: `schen691@connect.hkust-gz.edu.cn`
 - **Jianyu Lai**: `jlai218@connect.hkust-gz.edu.cn`
 
----
-
-<div align="center">
-
----
 
 </div>
