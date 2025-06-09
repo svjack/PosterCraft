@@ -95,7 +95,6 @@ Generate high-quality aesthetic posters from your prompt with `BF16` precision:
 | Gemini2.0-Flash-Gen | 0.798 | 0.786 | 0.746 | 7.5 | 18.7 |
 | **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** | **8.2** | **16.9** |
 
-### 📊 User Study Results
 
 <img src="images/user_study/hpc.png" alt="User Study Results" width="1000"/>
 
