@@ -48,9 +48,9 @@
 ## 🌟 What is PosterCraft?
 
 <div align="center">
-<img src="images/overview/framework_fig.png" alt="PosterCraft Framework Overview" width="800"/>
+<img src="images/demo/demo1.png" alt="What is PosterCraft - Quick Prompt Demo" width="800"/>
 <br>
-<em>PosterCraft unified framework for high-quality aesthetic poster generation</em>
+<em>From your prompts to high-quality aesthetic posters - Experience the power of simple descriptions</em>
 </div>
 
 PosterCraft is a revolutionary unified framework for **high-quality aesthetic poster generation** that excels in **precise text rendering**, **seamless integration of abstract art**, **striking layouts**, and **stylistic harmony**.
@@ -86,27 +86,16 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### 🎨 Basic Usage
+### 🎨 Try PosterCraft
 
-```python
-from postercraft import PosterCraft
+**Input Prompt:**
 
-# Initialize the model
-model = PosterCraft.from_pretrained("PosterCraft/postercraft-v2")
-
-# Generate a poster
-prompt = "Create a movie poster for a sci-fi thriller called 'Nexus'"
-poster = model.generate(
-    prompt=prompt,
-    width=768,
-    height=1024,
-    num_inference_steps=50,
-    guidance_scale=7.5
-)
-
-# Save the result
-poster.save("my_poster.png")
 ```
+"Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes"
+```
+
+**Generated Result:**  
+→ *Beautiful, high-quality poster with precise text rendering and stunning visual design*
 
 ---
 
