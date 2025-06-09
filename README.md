@@ -7,7 +7,7 @@
 [![Website](https://img.shields.io/badge/🌐-Website-green)](https://postercraft.ai)
 [![Demo](https://img.shields.io/badge/🎥-Live_Demo-purple)](https://ephemeral182.github.io/PosterCraft/)
 
-<img src="images/logo/logo3.png" alt="PosterCraft Logo" width="1000"/>
+<img src="images/logo/logo2.png" alt="PosterCraft Logo" width="1000"/>
 
 ### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](#)
 
