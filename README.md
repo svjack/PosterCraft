@@ -2,7 +2,7 @@
 
 # 🎨 PosterCraft
 
-**Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework**
+## **Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXX-red)](https://arxiv.org/abs/XXXX)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/ephemeral182/PosterCraft)
@@ -13,9 +13,9 @@
 
 <img src="images/logo/logo.png" alt="PosterCraft Logo" width="200"/>
 
-*From your prompts to high-quality aesthetic posters*
+## *From your prompts to high-quality aesthetic posters*
 
-[**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**📖 Documentation**](https://docs.postercraft.ai)
+### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**📖 Documentation**](https://docs.postercraft.ai)
 
 </div>
 
@@ -48,7 +48,7 @@
 ## 🌟 What is PosterCraft?
 
 <div align="center">
-<img src="images/demo/demo1.png" alt="What is PosterCraft - Quick Prompt Demo" width="800"/>
+<img src="images/demo/demo2.png" alt="What is PosterCraft - Quick Prompt Demo" width="600"/>
 <br>
 <em>From your prompts to high-quality aesthetic posters - Experience the power of simple descriptions</em>
 </div>
