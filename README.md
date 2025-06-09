@@ -45,7 +45,6 @@
 <div align="center">
 <img src="images/demo/demo2.png" alt="What is PosterCraft - Quick Prompt Demo" width="1000"/>
 <br>
-<em>From your prompts to high-quality aesthetic posters - Experience the power of simple descriptions</em>
 </div>
 
 PosterCraft is a unified framework for **high-quality aesthetic poster generation** that excels in **precise text rendering**, **seamless integration of abstract art**, **striking layouts**, and **stylistic harmony**.
