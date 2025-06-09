@@ -11,7 +11,8 @@
 
 ## *<span style="background: linear-gradient(to right, #8A5BF1, #E863D8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">From your prompts to high-quality aesthetic posters</span>*
 
-### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) 
+### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](#)
+
 </div>
 
 ---
@@ -73,8 +74,8 @@ pip install -e .
 
 Generate high-quality aesthetic posters from your prompt with `BF16` precision:
 
-```
-"Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes"
+```bash
+python inference.py --prompt "Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes." --enable_recap --num_inference_steps 28 --guidance_scale 3.5 --seed 42 --pipeline_path "black-forest-labs/FLUX.1-dev" --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" --qwen_model_path "Qwen/Qwen3-8B"
 ```
 
 
@@ -133,9 +134,9 @@ Generate high-quality aesthetic posters from your prompt with `BF16` precision:
 ## 🏗️ Model Architecture
 
 <div align="center">
-<img src="images/overview/framework_fig.png" alt="PosterCraft Framework Overview" width="800"/>
+<img src="images/overview/framework_fig.png" alt="PosterCraft Framework Overview" width="1000"/>
 <br>
-<em>A unified framework for high-quality aesthetic poster generation</em>
+<em><strong>A unified framework for high-quality aesthetic poster generation</strong></em>
 </div>
 
 Our unified framework consists of **four critical optimization stages in the training workflow**:
@@ -154,6 +155,34 @@ Introduces a Joint Vision-Language Conditioning mechanism. This iterative feedba
 
 ---
 
+## 💾 Model Zoo
+
+We provide the weights for our core models, fine-tuned at different stages of the PosterCraft pipeline.
+
+<div align="center">
+<table>
+<tr>
+<th>Model</th>
+<th>Stage</th>
+<th>Description</th>
+<th>Download</th>
+</tr>
+<tr>
+<td>🎯 <b>PosterCraft-v1_RL</b></td>
+<td>Stage 3: Aesthetic-Text RL</td>
+<td>Optimized via Aesthetic-Text Preference Optimization for higher-order aesthetic trade-offs.</td>
+<td><a href="https://huggingface.co/PosterCraft/PosterCraft-v1_RL">🤗 HF</a></td>
+</tr>
+<tr>
+<td>🔄 <b>PosterCraft-v1_Reflect</b></td>
+<td>Stage 4: Vision-Language Feedback</td>
+<td>Iteratively refined using vision-language feedback for further harmony and content accuracy.</td>
+<td><a href="https://huggingface.co/PosterCraft/PosterCraft-v1_Reflect">🤗 HF</a></td>
+</tr>
+</table>
+</div>
+
+---
 
 ## 📚 Datasets
 
@@ -162,7 +191,7 @@ We provide **four specialized datasets** for training PosterCraft workflow:
 
 ### 🔤 Text-Render-2M
 <div align="center">
-<img src="images/dataset/dataset1.png" alt="Text-Render-2M Dataset" width="700"/>
+<img src="images/dataset/dataset1.png" alt="Text-Render-2M Dataset" width="1000"/>
 <br>
 <em><strong>Text-Render-2M: Multi-instance text rendering with diverse selections</strong></em>
 </div>
@@ -171,7 +200,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 
 ### 🎨 HQ-Poster-100K
 <div align="center">
-<img src="images/dataset/dataset2.png" alt="HQ-Poster-100K Dataset" width="700"/>
+<img src="images/dataset/dataset2.png" alt="HQ-Poster-100K Dataset" width="1000"/>
 <br>
 <em><strong>HQ-Poster-100K: Curated high-quality aesthetic posters</strong></em>
 </div>
@@ -180,7 +209,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 
 ### 👍 Poster-Preference-100K
 <div align="center">
-<img src="images/dataset/dataset3.png" alt="Poster-Preference-100K Dataset" width="700"/>
+<img src="images/dataset/dataset3.png" alt="Poster-Preference-100K Dataset" width="1000"/>
 <br>
 <em><strong>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</strong></em>
 </div>
@@ -189,7 +218,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 
 ### 🔄 Poster-Reflect-120K
 <div align="center">
-<img src="images/dataset/dataset4.png" alt="Poster-Reflect-120K Dataset" width="700"/>
+<img src="images/dataset/dataset4.png" alt="Poster-Reflect-120K Dataset" width="1000"/>
 <br>
 <em><strong>Poster-Reflect-120K: Vision-language feedback pairs for iterative refinement</strong></em>
 </div>
@@ -258,13 +287,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🏛️ Thanks to our affiliated institutions for their support
 - 🤝 Special thanks to the open-source community for inspiration
-- 🎨 Gratitude to all beta testers and early adopters
-- 💡 Appreciation for valuable feedback from the research community
+
+---
+
+## 📬 Contact
+
+For any questions or inquiries, please reach out to us:
+
+- **Sixiang Chen**: `schen691@connect.hkust-gz.edu.cn`
+- **Jianyu Lai**: `jlai218@connect.hkust-gz.edu.cn`
 
 ---
 
 <div align="center">
-
 
 ---
 
