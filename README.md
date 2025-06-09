@@ -1,15 +1,11 @@
 <div align="center">
-
-# 🎨 PosterCraft
-
-## **Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework**
+<h1>🎨 PosterCraft:<br/>Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework</h1>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXX-red)](https://arxiv.org/abs/XXXX)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/ephemeral182/PosterCraft)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/PosterCraft)
 [![Website](https://img.shields.io/badge/🌐-Website-green)](https://postercraft.ai)
 [![Demo](https://img.shields.io/badge/🎥-Live_Demo-purple)](https://ephemeral182.github.io/PosterCraft/)
-
 
 <img src="images/logo/logo.png" alt="PosterCraft Logo" width="200"/>
 
@@ -21,50 +17,39 @@
 
 ---
 
-## 📢 News & Updates
+## News & Updates
 
-- 🎉 **[2024.12]** PosterCraft accepted to SIGGRAPH Asia 2025!
-- 🚀 **[2024.11]** Released PosterCraft v2.0 with improved text rendering
-- 🌟 **[2024.10]** Demo website launched with interactive features
-- 📊 **[2024.09]** Datasets released on HuggingFace
+
+- 🚀 **[2024.09]** Our live demo and inference code are now available!
+- 📊 **[2024.09]** We have released partial datasets and model weights on HuggingFace.
 - 🎨 **[2024.08]** Initial PosterCraft model released
 
 ---
 
 ## 👥 Authors
 
-[**Sixiang Chen**](https://ephemeral182.github.io/)¹\*, [**Jianyu Lai**](https://openreview.net/profile?id=~Jianyu_Lai1)¹\*, [**Jialin Gao**](https://scholar.google.com/citations?user=sj4FqEgAAAAJ&hl=zh-CN)²\*, [**Tian Ye**](https://owen718.github.io/)¹, [**Haoyu Chen**](https://haoyuchen.com/)¹, [**Hengyu Shi**](https://openreview.net/profile?id=%7EHengyu_Shi1)², [**Shitong Shao**](https://shaoshitong.github.io/)¹, [**Yunlong Lin**](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN)³, [**Song Fei**](https://openreview.net/profile?id=~Song_Fei1)¹, [**Zhaohu Xing**](https://ge-xing.github.io/)¹, [**Yeying Jin**](https://jinyeying.github.io/)⁴, **Junfeng Luo**², [**Xiaoming Wei**](https://scholar.google.com/citations?user=JXV5yrZxj5MC&hl=zh-CN)², [**Lei Zhu**](https://sites.google.com/site/indexlzhu/home)¹'⁵†
-
-¹The Hong Kong University of Science and Technology (Guangzhou)  
-²Meituan  
-³Xiamen University  
-⁴National University of Singapore  
-⁵The Hong Kong University of Science and Technology  
-
-\*Equal Contribution, †Corresponding Author
+> [**Sixiang Chen**](https://ephemeral182.github.io/)<sup>1</sup>\*, [**Jianyu Lai**](https://openreview.net/profile?id=~Jianyu_Lai1)<sup>1</sup>\*, [**Jialin Gao**](https://scholar.google.com/citations?user=sj4FqEgAAAAJ&hl=zh-CN)<sup>2</sup>\*, [**Tian Ye**](https://owen718.github.io/)<sup>1</sup>, [**Haoyu Chen**](https://haoyuchen.com/)<sup>1</sup>, [**Hengyu Shi**](https://openreview.net/profile?id=%7EHengyu_Shi1)<sup>2</sup>, [**Shitong Shao**](https://shaoshitong.github.io/)<sup>1</sup>, [**Yunlong Lin**](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN)<sup>3</sup>, [**Song Fei**](https://openreview.net/profile?id=~Song_Fei1)<sup>1</sup>, [**Zhaohu Xing**](https://ge-xing.github.io/)<sup>1</sup>, [**Yeying Jin**](https://jinyeying.github.io/)<sup>4</sup>, **Junfeng Luo**<sup>2</sup>, [**Xiaoming Wei**](https://scholar.google.com/citations?user=JXV5yrZxj5MC&hl=zh-CN)<sup>2</sup>, [**Lei Zhu**](https://sites.google.com/site/indexlzhu/home)<sup>1,5</sup>†
+>
+> <sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou)  
+> <sup>2</sup>Meituan  
+> <sup>3</sup>Xiamen University  
+> <sup>4</sup>National University of Singapore  
+> <sup>5</sup>The Hong Kong University of Science and Technology  
+>
+> \*Equal Contribution, †Corresponding Author
 
 ---
 
 ## 🌟 What is PosterCraft?
 
 <div align="center">
-<img src="images/demo/demo2.png" alt="What is PosterCraft - Quick Prompt Demo" width="600"/>
+<img src="images/demo/demo2.png" alt="What is PosterCraft - Quick Prompt Demo" width="1000"/>
 <br>
 <em>From your prompts to high-quality aesthetic posters - Experience the power of simple descriptions</em>
 </div>
 
-PosterCraft is a revolutionary unified framework for **high-quality aesthetic poster generation** that excels in **precise text rendering**, **seamless integration of abstract art**, **striking layouts**, and **stylistic harmony**.
+PosterCraft is a unified framework for **high-quality aesthetic poster generation** that excels in **precise text rendering**, **seamless integration of abstract art**, **striking layouts**, and **stylistic harmony**.
 
-### ✨ Key Features
-
-- 🎯 **Multi-Stage Training Pipeline**: Text Rendering → Poster Fine-tuning → Aesthetic-Text RL → Vision-Language Feedback
-- 🧠 **Advanced AI Models**: Built on cutting-edge diffusion models with specialized optimization
-- 📊 **State-of-the-Art Performance**: Outperforms existing methods in text accuracy and aesthetic quality
-- 🔄 **Interactive Feedback**: Real-time refinement based on user preferences
-- 🌐 **Web Interface**: Easy-to-use online demo and API access
-- 📱 **Multi-Platform Support**: Works across different devices and platforms
-
----
 
 ## 🚀 Quick Start
 
@@ -86,18 +71,14 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### 🎨 Try PosterCraft
+### 🚀 Quick Generation
 
-**Input Prompt:**
+Generate high-quality aesthetic posters from your prompt with `BF16` precision:
 
+```bash
+python inference.py --prompt "Urban Canvas Street Art Expo  poster with bold graffiti-style lettering and dynamic colorful splashes" --enable_recap --num_inference_steps 28 --guidance_scale 3.5 --seed 42 --pipeline_path "black-forest-labs/FLUX.1-dev" --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" --qwen_model_path "Qwen/Qwen3-8B"
 ```
-"Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes"
-```
 
-**Generated Result:**  
-→ *Beautiful, high-quality poster with precise text rendering and stunning visual design*
-
----
 
 ## 📊 Performance Benchmarks
 
@@ -105,18 +86,19 @@ pip install -e .
 
 ### 📈 Quantitative Results
 
-| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ | Aesthetic Score ↑ | FID ↓ |
-|--------|---------------|----------------|-----------------|-------------------|-------|
-| DALL-E 3 | 0.694 | 0.678 | 0.642 | 6.2 | 23.4 |
-| Midjourney v6 | 0.701 | 0.695 | 0.658 | 7.1 | 21.8 |
-| Flux1.dev | 0.723 | 0.707 | 0.667 | 6.8 | 20.5 |
-| Ideogram-v2 | 0.711 | 0.685 | 0.680 | 7.3 | 19.2 |
-| Gemini2.0-Flash-Gen | 0.798 | 0.786 | 0.746 | 7.5 | 18.7 |
-| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** | **8.2** | **16.9** |
+| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ |
+|--------|---------------|----------------|-----------------|
+| OpenCOLE (Open) | 0.082 | 0.076 | 0.061 |
+| Playground-v2.5 (Open) | 0.157 | 0.146 | 0.132 |
+| SD3.5 (Open) | 0.565 | 0.542 | 0.497 |
+| Flux1.dev (Open) | 0.723 | 0.707 | 0.667 |
+| Ideogram-v2 (Close) | 0.711 | 0.685 | 0.680 |
+| BAGEL (Open) | 0.543 | 0.536 | 0.463 |
+| Gemini2.0-Flash-Gen (Close) | 0.798 | 0.786 | 0.746 |
+| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** |
 
-### 📊 User Study Results
 
-<img src="images/user_study/hpc.png" alt="User Study Results" width="600"/>
+<img src="images/user_study/hpc.png" alt="User Study Results" width="1000"/>
 
 </div>
 
@@ -157,10 +139,10 @@ pip install -e .
 <div align="center">
 <img src="images/overview/framework_fig.png" alt="PosterCraft Framework Overview" width="800"/>
 <br>
-<em>PosterCraft unified framework consists of four critical optimization stages</em>
+<em>A unified framework for high-quality aesthetic poster generation</em>
 </div>
 
-Our unified framework consists of **four critical optimization stages**:
+Our unified framework consists of **four critical optimization stages in the training workflow**:
 
 ### 🔤 Stage 1: Text Rendering Optimization
 Addresses accurate text generation by precisely rendering diverse text on high-quality backgrounds, also ensuring faithful background representation and establishing foundational fidelity and robustness for poster generation.
@@ -176,66 +158,47 @@ Introduces a Joint Vision-Language Conditioning mechanism. This iterative feedba
 
 ---
 
-### 🔍 Technical Pipeline
-
-```mermaid
-graph LR
-    A[📝 Text Rendering<br/>Optimization] --> B[🎨 High-quality<br/>Poster Fine-tuning]
-    B --> C[🎯 Aesthetic-Text<br/>RL]
-    C --> D[🔄 Vision-Language<br/>Feedback]
-    
-    style A fill:#7c3aed,color:#ffffff
-    style B fill:#7c3aed,color:#ffffff
-    style C fill:#7c3aed,color:#ffffff
-    style D fill:#7c3aed,color:#ffffff
-```
-
-Each stage builds upon the previous one to ensure both **text accuracy** and **aesthetic quality** in the final poster generation.
-
----
 
 ## 📚 Datasets
 
-<div align="center">
-<img src="images/dataset/dataset3.png" alt="PosterCraft Datasets Overview" width="800"/>
-<br>
-<em>Comprehensive overview of our four specialized datasets for poster generation</em>
-</div>
 
-We provide **four specialized datasets** totaling over **420K samples**:
+We provide **four specialized datasets** for training PosterCraft workflow:
 
 ### 🔤 Text-Render-2M
 <div align="center">
 <img src="images/dataset/dataset1.png" alt="Text-Render-2M Dataset" width="700"/>
 <br>
-<em>Text-Render-2M: Multi-instance text rendering with diverse selections</em>
+<em><strong>Text-Render-2M: Multi-instance text rendering with diverse selections</strong></em>
 </div>
 
 A comprehensive text rendering dataset containing **2 million high-quality examples**. Features multi-instance text rendering, diverse text selections (varying in size, count, placement, and rotation), and dynamic content generation through both template-based and random string approaches.
-
-**Key Features:**
-- **Multi-Instance Rendering**: 1-3 text instances per image
-- **Text Content Generation**: Dynamic template generation / Random string generation  
-- **Font Selection & Style**: Randomly select standard fonts or artistic fonts
-- **Diverse Text Variations**: Size, count, placement, and rotation variations
 
 ### 🎨 HQ-Poster-100K
 <div align="center">
 <img src="images/dataset/dataset2.png" alt="HQ-Poster-100K Dataset" width="700"/>
 <br>
-<em>HQ-Poster-100K: Curated high-quality aesthetic posters</em>
+<em><strong>HQ-Poster-100K: Curated high-quality aesthetic posters</strong></em>
 </div>
 
 **100,000** meticulously curated high-quality posters with advanced filtering techniques and multi-modal scoring. Features Gemini-powered mask generation with detailed captions for comprehensive poster understanding.
 
 ### 👍 Poster-Preference-100K
 <div align="center">
-<img src="images/dataset/dataset4.png" alt="Poster-Preference-100K Dataset" width="700"/>
+<img src="images/dataset/dataset3.png" alt="Poster-Preference-100K Dataset" width="700"/>
 <br>
-<em>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</em>
+<em><strong>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</strong></em>
 </div>
 
 **100,000** preference learning poster pairs with comprehensive evaluation by Gemini and aesthetic evaluators. Designed for human-aligned poster generation training through reinforcement learning.
+
+### 🔄 Poster-Reflect-120K
+<div align="center">
+<img src="images/dataset/dataset4.png" alt="Poster-Reflect-120K Dataset" width="700"/>
+<br>
+<em><strong>Poster-Reflect-120K: Vision-language feedback pairs for iterative refinement</strong></em>
+</div>
+
+**120,000** vision-language feedback pairs with comprehensive evaluation by Gemini and aesthetic evaluators. This dataset captures the iterative refinement process, and then provides detailed feedback for further improvements.
 
 <div align="center">
 <table>
@@ -274,68 +237,6 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 
 ---
 
-## 📖 Documentation & Tutorials
-
-- 🎓 **[Tutorial Notebooks](https://github.com/ephemeral182/PosterCraft/tree/main/tutorials)** - Step-by-step guides
-- 🎨 **[Prompt Engineering Guide](https://docs.postercraft.ai/prompts)** - Best practices for prompts
-- 🔧 **[Custom Training Guide](https://docs.postercraft.ai/training)** - Train your own models
-- 🌐 **[Web Integration](https://docs.postercraft.ai/integration)** - Integrate into your applications
-
----
-
-## 🗺️ Roadmap
-
-- ✅ **Phase 1**: Core model development and training
-- ✅ **Phase 2**: Web demo and API release  
-- ✅ **Phase 3**: Dataset and model open-sourcing
-- 🔄 **Phase 4**: Multi-language support (In Progress)
-- 📋 **Phase 5**: Video poster generation (Q1 2025)
-- 🎯 **Phase 6**: 3D poster creation (Q2 2025)
-- 🚀 **Phase 7**: Real-time collaborative editing (Q3 2025)
-
----
-
-## ❓ FAQ
-
-<details>
-<summary><b>How does PosterCraft differ from other text-to-image models?</b></summary>
-PosterCraft is specifically optimized for poster generation with accurate text rendering, professional layouts, and aesthetic harmony - areas where general text-to-image models often struggle.
-</details>
-
-<details>
-<summary><b>Can I use PosterCraft for commercial purposes?</b></summary>
-Yes! PosterCraft is released under the MIT license, allowing both personal and commercial use.
-</details>
-
-<details>
-<summary><b>What image formats and sizes are supported?</b></summary>
-PosterCraft supports common poster dimensions (768x1024, 1024x768, 512x768) and outputs in PNG, JPEG, and WebP formats.
-</details>
-
-<details>
-<summary><b>How can I improve the quality of generated posters?</b></summary>
-Check our <a href="https://docs.postercraft.ai/prompts">Prompt Engineering Guide</a> for best practices on crafting effective prompts.
-</details>
-
----
-
-## 🤝 Community & Support
-
-<div align="center">
-
-[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/postercraft)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow_Us-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/PosterCraftAI)
-[![Reddit](https://img.shields.io/badge/Reddit-Discussion-FF4500?style=for-the-badge&logo=reddit)](https://reddit.com/r/PosterCraft)
-
-</div>
-
-- 🗨️ **[Discord](https://discord.gg/postercraft)** - Join our community for discussions and support
-- 🐦 **[Twitter](https://twitter.com/PosterCraftAI)** - Follow for updates and showcases  
-- 📧 **[Email](mailto:support@postercraft.ai)** - Direct support for technical issues
-- 🐛 **[Issues](https://github.com/ephemeral182/PosterCraft/issues)** - Report bugs and request features
-
----
-
 ## 📝 Citation
 
 If you find PosterCraft useful for your research, please cite our paper:
@@ -348,18 +249,6 @@ If you find PosterCraft useful for your research, please cite our paper:
   year={2024}
 }
 ```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
-
-- 🐛 Bug reports and feature requests
-- 💻 Code contributions and pull requests  
-- 📚 Documentation improvements
-- 🎨 Dataset contributions
-- 🌍 Translations and localization
 
 ---
 
@@ -380,14 +269,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-### 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ephemeral182/PosterCraft&type=Date)](https://star-history.com/#ephemeral182/PosterCraft&Date)
 
 ---
-
-**Made with ❤️ by the PosterCraft Team**
-
-*Transforming ideas into beautiful posters, one prompt at a time.*
 
 </div>
