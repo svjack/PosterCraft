@@ -18,9 +18,8 @@
 ## News & Updates
 
 
-- 🚀 **[2024.09]** Our live demo and inference code are now available!
-- 📊 **[2024.09]** We have released partial datasets and model weights on HuggingFace.
-- 🎨 **[2024.08]** Initial PosterCraft model released
+- 🚀 **[2025.06]** Our live demo and inference code are now available!
+- 📊 **[2025.06]** We have released partial datasets and model weights on HuggingFace.
 
 ---
 
@@ -91,14 +90,66 @@ python inference.py \
 
 ### 📈 Quantitative Results
 
-| Method | Text Recall ↑ | Text F-score ↑ | Text Accuracy ↑ | Aesthetic Score ↑ | FID ↓ |
-|--------|---------------|----------------|-----------------|-------------------|-------|
-| DALL-E 3 | 0.694 | 0.678 | 0.642 | 6.2 | 23.4 |
-| Midjourney v6 | 0.701 | 0.695 | 0.658 | 7.1 | 21.8 |
-| Flux1.dev | 0.723 | 0.707 | 0.667 | 6.8 | 20.5 |
-| Ideogram-v2 | 0.711 | 0.685 | 0.680 | 7.3 | 19.2 |
-| Gemini2.0-Flash-Gen | 0.798 | 0.786 | 0.746 | 7.5 | 18.7 |
-| **PosterCraft (ours)** | **0.787** | **0.774** | **0.735** | **8.2** | **16.9** |
+<table>
+<thead>
+  <tr>
+    <th>Method</th>
+    <th>Text Recall ↑</th>
+    <th>Text F-score ↑</th>
+    <th>Text Accuracy ↑</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="white-space: nowrap;">OpenCOLE [11] (Open)</td>
+    <td>0.082</td>
+    <td>0.076</td>
+    <td>0.061</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">Playground-v2.5 (Open)</td>
+    <td>0.157</td>
+    <td>0.146</td>
+    <td>0.132</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">SD3.5 (Open)</td>
+    <td>0.565</td>
+    <td>0.542</td>
+    <td>0.497</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">Flux1.dev (Open)</td>
+    <td>0.723</td>
+    <td>0.707</td>
+    <td>0.667</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">Ideogram-v2 (Close)</td>
+    <td>0.711</td>
+    <td>0.685</td>
+    <td>0.680</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">BAGEL (Open)</td>
+    <td>0.543</td>
+    <td>0.536</td>
+    <td>0.463</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">Gemini2.0-Flash-Gen (Close)</td>
+    <td>0.798</td>
+    <td>0.786</td>
+    <td>0.746</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;"><b>PosterCraft (ours)</b></td>
+    <td><b>0.787</b></td>
+    <td><b>0.774</b></td>
+    <td><b>0.735</b></td>
+  </tr>
+</tbody>
+</table>
 
 
 <img src="images/user_study/hpc.png" alt="User Study Results" width="1000"/>
