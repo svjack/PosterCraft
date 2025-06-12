@@ -20,9 +20,6 @@ class QwenRecapAgent:
             
         self.model = AutoModelForCausalLM.from_pretrained(model_path, **model_kwargs)
         
-        if device != "auto":
-            self.model.to(device)
-        
         self.prompt_template = """You are an expert poster prompt designer. Your task is to rewrite a user's short poster prompt into a detailed and vivid long-format prompt. Follow these steps carefully:
 
     **Step 1: Analyze the Core Requirements**
@@ -66,24 +63,36 @@ class QwenRecapAgent:
         full_prompt = self.prompt_template.format(brief_description=original_prompt)
         messages = [{"role": "user", "content": full_prompt}]
         try:
-            text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)
-            model_inputs = self.tokenizer([text], return_tensors="pt").to(self.model.device)
-            
-            with torch.no_grad():
-                generated_ids = self.model.generate(**model_inputs, max_new_tokens=4096, temperature=0.6)
-            
-            output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
-            full_response = self.tokenizer.decode(output_ids, skip_special_tokens=True)
-            final_answer = self._extract_final_answer(full_response)
-            
-            if final_answer:
-                return final_answer.strip()
-            
-            print("Qwen returned an empty answer. Using original prompt.")
-            return original_prompt
-        except Exception as e:
-            print(f"Qwen recap failed: {e}. Using original prompt.")
-            return original_prompt
+            is_cuda = isinstance(self.device, torch.device) and self.device.type == 'cuda'
+            if is_cuda and torch.cuda.is_available():
+                print(f"Moving Qwen model to {self.device}...")
+                self.model.to(self.device)
+
+            try:
+                text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)
+                model_inputs = self.tokenizer([text], return_tensors="pt").to(self.model.device)
+                
+                with torch.no_grad():
+                    generated_ids = self.model.generate(**model_inputs, max_new_tokens=4096, temperature=0.6)
+                
+                output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
+                full_response = self.tokenizer.decode(output_ids, skip_special_tokens=True)
+                final_answer = self._extract_final_answer(full_response)
+                
+                if final_answer:
+                    return final_answer.strip()
+                
+                print("Qwen returned an empty answer. Using original prompt.")
+                return original_prompt
+            except Exception as e:
+                print(f"Qwen recap failed: {e}. Using original prompt.")
+                return original_prompt
+        finally:
+            is_cuda = isinstance(self.device, torch.device) and self.device.type == 'cuda'
+            if is_cuda and torch.cuda.is_available():
+                print("Offloading Qwen model to CPU...")
+                self.model.to("cpu")
+                torch.cuda.empty_cache()
 
     def _extract_final_answer(self, full_response):
         if "</think>" in full_response:
@@ -121,7 +130,11 @@ class PosterGenerator:
                 torch_dtype=torch.bfloat16
             )
         
-        self.pipeline.to(self.device)
+        if self.device.type != 'cpu':
+            print("Enabling model CPU offload for FLUX pipeline.")
+            self.pipeline.enable_model_cpu_offload()
+        else:
+            self.pipeline.to(self.device)
     
     def generate(self, 
                  prompt, 
