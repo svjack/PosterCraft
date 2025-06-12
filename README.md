@@ -20,7 +20,7 @@
 
 
 
-- 🚀 **[2025.06]** Our live demo and inference code are now available!
+- 🚀 **[2025.06]** Our gradio demo and inference code are now available!
 - 📊 **[2025.06]** We have released partial datasets and model weights on HuggingFace.
 
 ---
@@ -65,8 +65,6 @@ conda activate postercraft
 # Install dependencies
 pip install -r requirements.txt
 
-# Install PosterCraft
-pip install -e .
 ```
 
 ### 🚀 Quick Generation
@@ -104,7 +102,7 @@ python inference_offload.py \
 We provide a Gradio web UI for PosterCraft. 
 
 ```bash
-python -m gradio poster_craft_web_ui.py
+python demo_gradio.py
 ```
 
 
