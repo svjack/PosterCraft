@@ -20,7 +20,7 @@
 
 
 
-- 🚀 **[2025.06]** Our live demo and inference code are now available!
+- 🚀 **[2025.06]** Our gradio demo and inference code are now available!
 - 📊 **[2025.06]** We have released partial datasets and model weights on HuggingFace.
 
 ---
