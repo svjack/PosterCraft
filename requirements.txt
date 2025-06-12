@@ -6,6 +6,7 @@ diffusers==0.33.1
 accelerate==1.6.0
 peft==0.15.2
 safetensors==0.5.3
+lightning==2.5.1.post0
 
 # Image Processing
 opencv-python==4.11.0.86
