@@ -4,18 +4,20 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXX-red)](https://arxiv.org/abs/XXXX)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/ephemeral182/PosterCraft)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/PosterCraft)
-[![Website](https://img.shields.io/badge/🌐-Website-green)](https://postercraft.ai)
+[![Website](https://img.shields.io/badge/🌐-Website-green)](https://ephemeral182.github.io/PosterCraft/)
 [![Demo](https://img.shields.io/badge/🎥-Live_Demo-purple)](https://ephemeral182.github.io/PosterCraft/)
 
 <img src="images/logo/logo2.png" alt="PosterCraft Logo" width="1000"/>
 
-### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](#)
+### [**🌐 Website**](https://ephemeral182.github.io/PosterCraft/) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](#)
 
 </div>
 
 ---
 
 ## News & Updates
+
+
 
 
 - 🚀 **[2025.06]** Our live demo and inference code are now available!
@@ -83,6 +85,14 @@ python inference.py \
   --qwen_model_path "Qwen/Qwen3-8B"
 ```
 
+### 💻 Gradio Web UI
+
+We provide a Gradio web UI for PosterCraft. 
+
+```bash
+python -m gradio poster_craft_web_ui.py
+```
+
 
 ## 📊 Performance Benchmarks
 
@@ -101,7 +111,7 @@ python inference.py \
 </thead>
 <tbody>
   <tr>
-    <td style="white-space: nowrap;">OpenCOLE [11] (Open)</td>
+    <td style="white-space: nowrap;">OpenCOLE (Open)</td>
     <td>0.082</td>
     <td>0.076</td>
     <td>0.061</td>
@@ -270,7 +280,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 <em><strong>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</strong></em>
 </div>
 
-**100,000** preference learning poster pairs with comprehensive evaluation by Gemini and aesthetic evaluators. Designed for human-aligned poster generation training through reinforcement learning.
+This preference dataset is sourced from over **100,000** generated poster images. Through comprehensive evaluation by Gemini and aesthetic evaluators, we construct high-quality preference pairs designed for reinforcement learning to align poster generation with human aesthetic judgments.
 
 ### 🔄 Poster-Reflect-120K
 <div align="center">
@@ -279,7 +289,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 <em><strong>Poster-Reflect-120K: Vision-language feedback pairs for iterative refinement</strong></em>
 </div>
 
-**120,000** vision-language feedback pairs with comprehensive evaluation by Gemini and aesthetic evaluators. This dataset captures the iterative refinement process, and then provides detailed feedback for further improvements.
+This vision-language feedback dataset is sourced from over **120,000** generated poster images. Through comprehensive evaluation by Gemini and aesthetic evaluators, this dataset captures the iterative refinement process and provides detailed feedback for further improvements.
 
 <div align="center">
 <table>
@@ -303,13 +313,13 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 </tr>
 <tr>
 <td>👍 <b>Poster-Preference-100K</b></td>
-<td>100K pairs</td>
+<td>100K images</td>
 <td>Preference learning poster pairs for RL training</td>
 <td><a href="https://huggingface.co/datasets/PosterCraft/Poster-Preference-100K">🤗 HF</a></td>
 </tr>
 <tr>
 <td>🔄 <b>Poster-Reflect-120K</b></td>
-<td>120K pairs</td>
+<td>120K images</td>
 <td>Vision-language feedback pairs for iterative refinement</td>
 <td><a href="https://huggingface.co/datasets/PosterCraft/Poster-Reflect-120K">🤗 HF</a></td>
 </tr>
@@ -330,12 +340,6 @@ If you find PosterCraft useful for your research, please cite our paper:
   year={2024}
 }
 ```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
