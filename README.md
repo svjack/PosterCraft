@@ -90,7 +90,7 @@ python inference.py \
 We provide a Gradio web UI for PosterCraft. 
 
 ```bash
-python -m gradio poster_craft_web_ui.py
+python demo_gradio.py
 ```
 
 
