@@ -4,12 +4,12 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXX-red)](https://arxiv.org/abs/XXXX)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/ephemeral182/PosterCraft)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/PosterCraft)
-[![Website](https://img.shields.io/badge/🌐-Website-green)](https://postercraft.ai)
+[![Website](https://img.shields.io/badge/🌐-Website-green)](https://ephemeral182.github.io/PosterCraft/)
 [![Demo](https://img.shields.io/badge/🎥-Live_Demo-purple)](https://ephemeral182.github.io/PosterCraft/)
 
 <img src="images/logo/logo2.png" alt="PosterCraft Logo" width="1000"/>
 
-### [**🌐 Website**](https://postercraft.ai) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](#)
+### [**🌐 Website**](https://ephemeral182.github.io/PosterCraft/) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/XXXX) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](#)
 
 </div>
 
@@ -25,7 +25,7 @@
 
 ## 👥 Authors
 
-> [**Sixiang Chen**](https://ephemeral182.github.io/)<sup>1</sup>\*, [**Jianyu Lai**](https://openreview.net/profile?id=~Jianyu_Lai1)<sup>1</sup>\*, [**Jialin Gao**](https://scholar.google.com/citations?user=sj4FqEgAAAAJ&hl=zh-CN)<sup>2</sup>\*, [**Tian Ye**](https://owen718.github.io/)<sup>1</sup>, [**Haoyu Chen**](https://haoyuchen.com/)<sup>1</sup>, [**Hengyu Shi**](https://openreview.net/profile?id=%7EHengyu_Shi1)<sup>2</sup>, [**Shitong Shao**](https://shaoshitong.github.io/)<sup>1</sup>, [**Yunlong Lin**](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN)<sup>3</sup>, [**Song Fei**](https://openreview.net/profile?id=~Song_Fei1)<sup>1</sup>, [**Zhaohu Xing**](https://ge-xing.github.io/)<sup>1</sup>, [**Yeying Jin**](https://jinyeying.github.io/)<sup>4</sup>, **Junfeng Luo**<sup>2</sup>, [**Xiaoming Wei**](https://scholar.google.com/citations?user=JXV5yrZxj5MC&hl=zh-CN)<sup>2</sup>, [**Lei Zhu**](https://sites.google.com/site/indexlzhu/home)<sup>1,5</sup>†
+> [**Sixiang Chen**](https://ephemeral182.github.io/)<sup>1,2</sup>\*, [**Jianyu Lai**](https://openreview.net/profile?id=~Jianyu_Lai1)<sup>1</sup>\*, [**Jialin Gao**](https://scholar.google.com/citations?user=sj4FqEgAAAAJ&hl=zh-CN)<sup>2</sup>\*, [**Tian Ye**](https://owen718.github.io/)<sup>1</sup>, [**Haoyu Chen**](https://haoyuchen.com/)<sup>1</sup>, [**Hengyu Shi**](https://openreview.net/profile?id=%7EHengyu_Shi1)<sup>2</sup>, [**Shitong Shao**](https://shaoshitong.github.io/)<sup>1</sup>, [**Yunlong Lin**](https://scholar.google.com.hk/citations?user=5F3tICwAAAAJ&hl=zh-CN)<sup>3</sup>, [**Song Fei**](https://openreview.net/profile?id=~Song_Fei1)<sup>1</sup>, [**Zhaohu Xing**](https://ge-xing.github.io/)<sup>1</sup>, [**Yeying Jin**](https://jinyeying.github.io/)<sup>4</sup>, **Junfeng Luo**<sup>2</sup>, [**Xiaoming Wei**](https://scholar.google.com/citations?user=JXV5yrZxj5MC&hl=zh-CN)<sup>2</sup>, [**Lei Zhu**](https://sites.google.com/site/indexlzhu/home)<sup>1,5</sup>†
 >
 > <sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou)  
 > <sup>2</sup>Meituan  
@@ -83,6 +83,14 @@ python inference.py \
   --qwen_model_path "Qwen/Qwen3-8B"
 ```
 
+### 💻 Gradio Web UI
+
+We provide a Gradio web UI for PosterCraft. 
+
+```bash
+python -m gradio poster_craft_web_ui.py
+```
+
 
 ## 📊 Performance Benchmarks
 
@@ -101,7 +109,7 @@ python inference.py \
 </thead>
 <tbody>
   <tr>
-    <td style="white-space: nowrap;">OpenCOLE [11] (Open)</td>
+    <td style="white-space: nowrap;">OpenCOLE (Open)</td>
     <td>0.082</td>
     <td>0.076</td>
     <td>0.061</td>
@@ -330,12 +338,6 @@ If you find PosterCraft useful for your research, please cite our paper:
   year={2024}
 }
 ```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
