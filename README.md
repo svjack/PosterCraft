@@ -18,6 +18,8 @@
 ## News & Updates
 
 
+
+
 - 🚀 **[2025.06]** Our live demo and inference code are now available!
 - 📊 **[2025.06]** We have released partial datasets and model weights on HuggingFace.
 
@@ -278,7 +280,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 <em><strong>Poster-Preference-100K: Preference learning pairs for aesthetic optimization</strong></em>
 </div>
 
-**100,000** preference learning poster pairs with comprehensive evaluation by Gemini and aesthetic evaluators. Designed for human-aligned poster generation training through reinforcement learning.
+This preference dataset is sourced from over **100,000** generated poster images. Through comprehensive evaluation by Gemini and aesthetic evaluators, we construct high-quality preference pairs designed for reinforcement learning to align poster generation with human aesthetic judgments.
 
 ### 🔄 Poster-Reflect-120K
 <div align="center">
@@ -287,7 +289,7 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 <em><strong>Poster-Reflect-120K: Vision-language feedback pairs for iterative refinement</strong></em>
 </div>
 
-**120,000** vision-language feedback pairs with comprehensive evaluation by Gemini and aesthetic evaluators. This dataset captures the iterative refinement process, and then provides detailed feedback for further improvements.
+This vision-language feedback dataset is sourced from over **120,000** generated poster images. Through comprehensive evaluation by Gemini and aesthetic evaluators, this dataset captures the iterative refinement process and provides detailed feedback for further improvements.
 
 <div align="center">
 <table>
@@ -311,13 +313,13 @@ A comprehensive text rendering dataset containing **2 million high-quality examp
 </tr>
 <tr>
 <td>👍 <b>Poster-Preference-100K</b></td>
-<td>100K pairs</td>
+<td>100K images</td>
 <td>Preference learning poster pairs for RL training</td>
 <td><a href="https://huggingface.co/datasets/PosterCraft/Poster-Preference-100K">🤗 HF</a></td>
 </tr>
 <tr>
 <td>🔄 <b>Poster-Reflect-120K</b></td>
-<td>120K pairs</td>
+<td>120K images</td>
 <td>Vision-language feedback pairs for iterative refinement</td>
 <td><a href="https://huggingface.co/datasets/PosterCraft/Poster-Reflect-120K">🤗 HF</a></td>
 </tr>
