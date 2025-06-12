@@ -85,6 +85,20 @@ python inference.py \
   --qwen_model_path "Qwen/Qwen3-8B"
 ```
 
+If you are running on a GPU with limited memory, you can use `inference_offload.py` to offload some components to the CPU:
+
+```bash
+python inference_offload.py \
+  --prompt "Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes" \
+  --enable_recap \
+  --num_inference_steps 28 \
+  --guidance_scale 3.5 \
+  --seed 42 \
+  --pipeline_path "black-forest-labs/FLUX.1-dev" \
+  --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" \
+  --qwen_model_path "Qwen/Qwen3-8B"
+```
+
 ### 💻 Gradio Web UI
 
 We provide a Gradio web UI for PosterCraft. 
