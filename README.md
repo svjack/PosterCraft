@@ -5,7 +5,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/ephemeral182/PosterCraft)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/PosterCraft)
 [![Website](https://img.shields.io/badge/🌐-Website-green)](https://ephemeral182.github.io/PosterCraft/)
-[![Video Demo](https://img.shields.io/badge/🎥-Live_Demo-purple)](https://www.youtube.com/watch?v=92wMU4D7qx0)
+[![Video Demo](https://img.shields.io/badge/🎥-Video_Demo-purple)](https://www.youtube.com/watch?v=92wMU4D7qx0)
 
 <img src="images/logo/logo2.png" alt="PosterCraft Logo" width="1000"/>
 
