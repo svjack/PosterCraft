@@ -9,7 +9,7 @@
 
 <img src="images/logo/logo2.png" alt="PosterCraft Logo" width="1000"/>
 
-### [**🌐 Website**](https://ephemeral182.github.io/PosterCraft/) | [**🎯 Demo**](https://ephemeral182.github.io/PosterCraft/) | [**📄 Paper**](https://arxiv.org/abs/2506.10741) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](https://www.youtube.com/watch?v=92wMU4D7qx0)
+### [**🌐 Website**](https://ephemeral182.github.io/PosterCraft/) | [**🎯 Demo**](https://github.com/Ephemeral182/PosterCraft) | [**📄 Paper**](https://arxiv.org/abs/2506.10741) | [**🤗 Models**](https://huggingface.co/PosterCraft) | [**📚 Datasets**](https://huggingface.co/datasets/PosterCraft) | [**🎥 Video**](https://www.youtube.com/watch?v=92wMU4D7qx0)
 
 </div>
 
