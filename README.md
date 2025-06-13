@@ -348,7 +348,7 @@ If you find PosterCraft useful for your research, please cite our paper:
 @article{chen2024postercraft,
   title={PosterCraft: Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework},
   author={Chen, Sixiang and Lai, Jianyu and Gao, Jialin and Ye, Tian and Chen, Haoyu and Shi, Hengyu and Shao, Shitong and Lin, Yunlong and Fei, Song and Xing, Zhaohu and Jin, Yeying and Luo, Junfeng and Wei, Xiaoming and Zhu, Lei},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2506.10741},
   year={2024}
 }
 ```
@@ -371,3 +371,4 @@ For any questions or inquiries, please reach out to us:
 
 
 </div>
+
