@@ -9,7 +9,7 @@ import datetime
 from openai import OpenAI
 
 # 初始化 DeepSeek 客户端
-client = OpenAI(api_key="sk-fe823f250986489f916901aa0efd11c8",
+client = OpenAI(api_key="",
      base_url="https://api.deepseek.com")
 
 
