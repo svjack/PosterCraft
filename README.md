@@ -48,6 +48,10 @@ python inference_offload_deepseek.py \
   --pipeline_path "black-forest-labs/FLUX.1-dev" \
   --custom_transformer_path "PosterCraft/PosterCraft-v1_RL"
 
+Mavuika lora
+https://civitai.com/models/654820?modelVersionId=732588
+
+python inference_offload_deepseek_mavuika.py
 ```
 
 
