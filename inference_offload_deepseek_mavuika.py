@@ -197,3 +197,12 @@ if __name__ == "__main__":
     processed_dataset = process_dataset(args.dataset)
     processed_dataset.save_to_disk("Mavuika_Product_Posters")
     print("Processed dataset saved to disk.")
+
+'''
+from datasets import load_from_disk
+ds = load_from_disk("Mavuika_Product_Posters/")
+ds = ds.remove_columns(
+    [ 'product_description', 'poster_description']
+)
+ds.push_to_hub("svjack/Mavuika_Flux_Product_Posters")
+'''
