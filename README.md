@@ -1,3 +1,56 @@
+```bash
+# Clone the repository
+git clone https://github.com/ephemeral182/PosterCraft.git
+cd PosterCraft
+
+# Create conda environment
+conda create -n postercraft python=3.11
+conda activate postercraft
+pip install ipykernel &&  python -m ipykernel install --user --name postercraft --display-name postercraft
+
+# Install dependencies
+pip install -r requirements.txt
+pip install protobuf
+pip install openai
+pip install "httpx[socks]"
+
+huggingface-cli login
+
+huggingface-cli download Qwen/Qwen3-8B --local-dir Qwen3-8B
+
+python inference_offload.py \
+  --prompt "Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes" \
+  --enable_recap \
+  --num_inference_steps 28 \
+  --guidance_scale 3.5 \
+  --seed 42 \
+  --pipeline_path "black-forest-labs/FLUX.1-dev" \
+  --custom_transformer_path "PosterCraft/PosterCraft-v1_RL" \
+  --qwen_model_path "Qwen3-8B"
+
+vim inference_offload_deepseek.py
+
+python inference_offload_deepseek.py \
+  --prompt "Urban Canvas Street Art Expo poster with bold graffiti-style lettering and dynamic colorful splashes" \
+  --enable_recap \
+  --num_inference_steps 28 \
+  --guidance_scale 3.5 \
+  --seed 42 \
+  --pipeline_path "black-forest-labs/FLUX.1-dev" \
+  --custom_transformer_path "PosterCraft/PosterCraft-v1_RL"
+
+python inference_offload_deepseek.py \
+  --prompt "Restaurants KFC poster about Hamberger with Varesa, a pink-haired character with large, expressive purple eyes." \
+  --enable_recap \
+  --num_inference_steps 28 \
+  --guidance_scale 3.5 \
+  --seed 42 \
+  --pipeline_path "black-forest-labs/FLUX.1-dev" \
+  --custom_transformer_path "PosterCraft/PosterCraft-v1_RL"
+
+```
+
+
 <div align="center">
 <h1>🎨 PosterCraft:<br/>Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework</h1>
 
