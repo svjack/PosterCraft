@@ -168,7 +168,10 @@ def process_dataset(dataset_name, output_dir="generated_posters"):
     dataset = dataset.map(add_prompt_column)
 
     # 初始化 PosterGenerator
-    generator = PosterGenerator(enable_recap=True, device="cuda:0")
+    #generator = PosterGenerator(enable_recap=True, device="cuda:0")
+    generator = PosterGenerator(enable_recap=True, device="cuda:0",
+                               custom_transformer_path = "PosterCraft/PosterCraft-v1_RL"
+                               )
 
     # 生成图片并添加到数据集中
     def generate_image_and_update(example):
